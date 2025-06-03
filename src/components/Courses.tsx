@@ -5,63 +5,54 @@ const Courses = () => {
       title: "C Programming",
       description: "Master the fundamentals of programming with C language",
       duration: "2 months",
-      fee: "₹5,000",
       features: ["Variables & Data Types", "Control Structures", "Functions", "Pointers"]
     },
     {
       title: "C++ Programming", 
       description: "Object-oriented programming concepts and advanced C++",
       duration: "2.5 months",
-      fee: "₹5,000",
       features: ["OOP Concepts", "Classes & Objects", "Inheritance", "Polymorphism"]
     },
     {
       title: "Web Development",
       description: "Full-stack web development with modern technologies",
       duration: "4 months",
-      fee: "₹5,000",
       features: ["HTML5 & CSS3", "JavaScript", "React", "Node.js"]
     },
     {
       title: "Python Programming",
       description: "Learn Python for automation, data science, and web development",
       duration: "3 months", 
-      fee: "₹5,000",
       features: ["Python Basics", "Data Structures", "Libraries", "Projects"]
     },
     {
       title: "TALLY ERP9",
       description: "Complete accounting software training for business",
       duration: "1.5 months",
-      fee: "₹5,000",
       features: ["Accounting Basics", "Inventory Management", "GST", "Reports"]
     },
     {
       title: "English Speaking",
       description: "Improve communication skills and confidence",
       duration: "2 months",
-      fee: "₹5,000", 
       features: ["Grammar", "Vocabulary", "Pronunciation", "Confidence Building"]
     },
     {
       title: "Advanced Excel",
       description: "Master Excel for data analysis and automation",
       duration: "1 month",
-      fee: "₹5,000",
       features: ["Formulas", "Pivot Tables", "Macros", "Data Analysis"]
     },
     {
       title: "MSCIT",
       description: "Maharashtra State Certificate in Information Technology",
       duration: "6 months",
-      fee: "₹5,000",
       features: ["Computer Basics", "Office Suite", "Internet", "Certification"]
     },
     {
       title: "MS Office",
       description: "Complete Microsoft Office suite training",
       duration: "1.5 months",
-      fee: "₹5,000",
       features: ["Word", "Excel", "PowerPoint", "Outlook"]
     }
   ];
@@ -94,9 +85,8 @@ const Courses = () => {
                 </h3>
                 <p className="text-slate-300 text-sm mb-4">{course.description}</p>
                 
-                <div className="flex justify-between items-center mb-4">
+                <div className="mb-4">
                   <span className="text-blue-400 font-semibold">Duration: {course.duration}</span>
-                  <span className="text-teal-400 font-bold text-lg">{course.fee}</span>
                 </div>
               </div>
 
