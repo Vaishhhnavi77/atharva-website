@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Phone } from 'lucide-react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,7 +11,6 @@ const Navbar = () => {
     { name: 'About', href: '#about' },
     { name: 'Testimonials', href: '#testimonials' },
     { name: 'Reviews', href: '#reviews' },
-    { name: 'Contact', href: '#contact' },
   ];
 
   return (
@@ -38,10 +37,15 @@ const Navbar = () => {
                   <span className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-blue-400 to-teal-400 transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
                 </a>
               ))}
+              {/* Contact Button with Mobile Icon */}
+              <a
+                href="#contact"
+                className="bg-gradient-to-r from-blue-500 to-teal-500 text-white px-6 py-3 rounded-full font-bold text-lg hover:from-blue-600 hover:to-teal-600 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center space-x-2 group"
+              >
+                <Phone className="w-5 h-5 transition-transform duration-300 group-hover:animate-pulse" />
+                <span>Contact</span>
+              </a>
             </div>
-            <button className="bg-gradient-to-r from-blue-500 to-teal-500 text-white px-6 py-3 rounded-full font-bold text-lg hover:from-blue-600 hover:to-teal-600 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl ml-8">
-              Enroll Now
-            </button>
           </div>
 
           {/* Mobile menu button */}
@@ -69,9 +73,15 @@ const Navbar = () => {
                   {item.name}
                 </a>
               ))}
-              <button className="w-full bg-gradient-to-r from-blue-500 to-teal-500 text-white px-6 py-3 rounded-full font-bold text-lg hover:from-blue-600 hover:to-teal-600 transition-all duration-300 mt-4 shadow-lg">
-                Enroll Now
-              </button>
+              {/* Mobile Contact Button */}
+              <a
+                href="#contact"
+                className="w-full bg-gradient-to-r from-blue-500 to-teal-500 text-white px-6 py-3 rounded-full font-bold text-lg hover:from-blue-600 hover:to-teal-600 transition-all duration-300 mt-4 shadow-lg flex items-center justify-center space-x-2"
+                onClick={() => setIsOpen(false)}
+              >
+                <Phone className="w-5 h-5" />
+                <span>Contact</span>
+              </a>
             </div>
           </div>
         )}
