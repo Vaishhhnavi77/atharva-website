@@ -13,7 +13,7 @@ const Reviews = () => {
       name: "Rahul Sharma",
       course: "Web Development",
       rating: 5,
-      review: "Excellent institute! The instructors are very knowledgeable and the course content is up-to-date. Highly recommended!",
+      review: "Excellent institute! The instructors are very knowledgeable and the course content is up-to-date. The certificate really helped me get my current job. Highly recommended!",
       date: "2024-01-15"
     },
     {
@@ -21,8 +21,16 @@ const Reviews = () => {
       name: "Priya Patel",
       course: "Python Programming",
       rating: 5,
-      review: "Great learning experience. The hands-on approach really helped me understand the concepts better.",
+      review: "Great learning experience. The hands-on approach really helped me understand the concepts better. The certificate is well-recognized in the industry.",
       date: "2024-01-10"
+    },
+    {
+      id: 3,
+      name: "Amit Kumar",
+      course: "CCSS",
+      rating: 5,
+      review: "Perfect for beginners! Learned HTML, MS Office, and Tally basics. The government certification is a great advantage for job applications.",
+      date: "2024-01-05"
     }
   ]);
 
@@ -53,62 +61,62 @@ const Reviews = () => {
     return Array.from({ length: 5 }, (_, i) => (
       <Star
         key={i}
-        className={`w-4 h-4 ${i < rating ? 'text-yellow-400 fill-current' : 'text-gray-300'}`}
+        className={`w-5 h-5 ${i < rating ? 'text-yellow-400 fill-current' : 'text-gray-300'}`}
       />
     ));
   };
 
   return (
-    <section id="reviews" className="py-20 bg-slate-800/20">
+    <section id="reviews" className="py-24 bg-slate-800/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+        <div className="text-center mb-20">
+          <h2 className="text-5xl md:text-6xl font-bold text-white mb-8">
             Student{' '}
             <span className="bg-gradient-to-r from-blue-400 to-teal-400 bg-clip-text text-transparent">
               Reviews
             </span>
           </h2>
-          <p className="text-xl text-slate-300 max-w-3xl mx-auto mb-8">
-            Read what our students say about their learning experience at Atharva Computer Institute.
+          <p className="text-xl text-slate-300 max-w-4xl mx-auto mb-10">
+            Read what our students say about their learning experience at Atharva Computer Institute and how our certified courses helped them advance their careers.
           </p>
           
           <Button
             onClick={() => setShowForm(!showForm)}
-            className="bg-gradient-to-r from-blue-500 to-teal-500 text-white hover:from-blue-600 hover:to-teal-600"
+            className="bg-gradient-to-r from-blue-500 to-teal-500 text-white hover:from-blue-600 hover:to-teal-600 text-lg px-8 py-3 rounded-full"
           >
             Write a Review
           </Button>
         </div>
 
         {showForm && (
-          <Card className="max-w-2xl mx-auto mb-12 bg-slate-800/50 border-slate-700">
+          <Card className="max-w-3xl mx-auto mb-16 bg-slate-800/50 border-slate-700">
             <CardHeader>
-              <CardTitle className="text-white">Write Your Review</CardTitle>
+              <CardTitle className="text-white text-2xl">Write Your Review</CardTitle>
             </CardHeader>
             <CardContent>
-              <form onSubmit={handleSubmit} className="space-y-4">
-                <div className="grid md:grid-cols-2 gap-4">
+              <form onSubmit={handleSubmit} className="space-y-6">
+                <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <label className="block text-sm font-medium text-slate-300 mb-2">
+                    <label className="block text-base font-medium text-slate-300 mb-3">
                       Your Name
                     </label>
                     <Input
                       type="text"
                       value={newReview.name}
                       onChange={(e) => setNewReview({ ...newReview, name: e.target.value })}
-                      className="bg-slate-700 border-slate-600 text-white"
+                      className="bg-slate-700 border-slate-600 text-white text-base py-3"
                       required
                     />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-slate-300 mb-2">
+                    <label className="block text-base font-medium text-slate-300 mb-3">
                       Course
                     </label>
                     <Input
                       type="text"
                       value={newReview.course}
                       onChange={(e) => setNewReview({ ...newReview, course: e.target.value })}
-                      className="bg-slate-700 border-slate-600 text-white"
+                      className="bg-slate-700 border-slate-600 text-white text-base py-3"
                       placeholder="e.g., Web Development"
                       required
                     />
@@ -116,14 +124,14 @@ const Reviews = () => {
                 </div>
                 
                 <div>
-                  <label className="block text-sm font-medium text-slate-300 mb-2">
+                  <label className="block text-base font-medium text-slate-300 mb-3">
                     Rating
                   </label>
-                  <div className="flex gap-1">
+                  <div className="flex gap-2">
                     {[1, 2, 3, 4, 5].map((star) => (
                       <Star
                         key={star}
-                        className={`w-6 h-6 cursor-pointer ${
+                        className={`w-8 h-8 cursor-pointer ${
                           star <= newReview.rating ? 'text-yellow-400 fill-current' : 'text-gray-400'
                         }`}
                         onClick={() => setNewReview({ ...newReview, rating: star })}
@@ -133,14 +141,14 @@ const Reviews = () => {
                 </div>
                 
                 <div>
-                  <label className="block text-sm font-medium text-slate-300 mb-2">
+                  <label className="block text-base font-medium text-slate-300 mb-3">
                     Your Review
                   </label>
                   <Textarea
                     value={newReview.review}
                     onChange={(e) => setNewReview({ ...newReview, review: e.target.value })}
-                    className="bg-slate-700 border-slate-600 text-white"
-                    rows={4}
+                    className="bg-slate-700 border-slate-600 text-white text-base"
+                    rows={5}
                     placeholder="Share your experience with Atharva Computer Institute..."
                     required
                   />
@@ -149,7 +157,7 @@ const Reviews = () => {
                 <div className="flex gap-4">
                   <Button
                     type="submit"
-                    className="bg-gradient-to-r from-blue-500 to-teal-500 text-white hover:from-blue-600 hover:to-teal-600"
+                    className="bg-gradient-to-r from-blue-500 to-teal-500 text-white hover:from-blue-600 hover:to-teal-600 text-lg px-8 py-3"
                   >
                     Submit Review
                   </Button>
@@ -157,7 +165,7 @@ const Reviews = () => {
                     type="button"
                     variant="outline"
                     onClick={() => setShowForm(false)}
-                    className="border-slate-600 text-slate-300 hover:bg-slate-700"
+                    className="border-slate-600 text-slate-300 hover:bg-slate-700 text-lg px-8 py-3"
                   >
                     Cancel
                   </Button>
@@ -167,25 +175,25 @@ const Reviews = () => {
           </Card>
         )}
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
           {reviews.map((review) => (
             <Card
               key={review.id}
               className="bg-slate-800/50 border-slate-700 hover:border-blue-500/50 transition-all duration-300 hover:transform hover:scale-105"
             >
-              <CardContent className="p-6">
-                <div className="flex items-center gap-2 mb-4">
+              <CardContent className="p-8">
+                <div className="flex items-center gap-3 mb-6">
                   {renderStars(review.rating)}
-                  <span className="text-sm text-slate-400 ml-2">{review.date}</span>
+                  <span className="text-base text-slate-400 ml-2">{review.date}</span>
                 </div>
                 
-                <p className="text-slate-300 mb-4 italic">
+                <p className="text-slate-300 mb-6 italic text-lg leading-relaxed">
                   "{review.review}"
                 </p>
                 
-                <div className="border-t border-slate-700 pt-4">
-                  <h4 className="text-white font-semibold">{review.name}</h4>
-                  <p className="text-blue-400 text-sm">{review.course}</p>
+                <div className="border-t border-slate-700 pt-6">
+                  <h4 className="text-white font-semibold text-lg">{review.name}</h4>
+                  <p className="text-blue-400 text-base">{review.course}</p>
                 </div>
               </CardContent>
             </Card>
