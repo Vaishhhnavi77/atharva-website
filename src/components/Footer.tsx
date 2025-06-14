@@ -26,7 +26,7 @@ const Footer = () => {
           <div>
             <h3 className="text-white font-semibold mb-4">Contact Info</h3>
             <div className="space-y-2 text-slate-400">
-              <p>Phone: +91 98765 43210</p>
+              <p>Phone: +91 82082 67009</p>
               <p>Email: sheelawaghule@gmail.com</p>
               <p>Address: Sandwik Colony-Bhosari, Pune 411039, Maharashtra</p>
             </div>

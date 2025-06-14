@@ -14,14 +14,14 @@ const Hero = () => {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-            Master Programming &{' '}
+            Code Your Future with{' '}
             <span className="bg-gradient-to-r from-blue-400 to-teal-400 bg-clip-text text-transparent">
-              Build Your Future
+              Atharva!
             </span>
           </h1>
           
           <p className="text-xl md:text-2xl text-slate-300 mb-8 max-w-3xl mx-auto">
-            Learn C, C++, Web Development, Python, and more with expert guidance and hands-on projects!
+            From Basics to Brilliance — Only at Atharva.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

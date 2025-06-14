@@ -20,7 +20,7 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <div className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-teal-400 bg-clip-text text-transparent">
-              Atharva Institutions
+              Atharva Computer Institute
             </div>
           </div>
 
