@@ -14,10 +14,10 @@ const Hero = () => {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-            <span className="inline-block animate-[fadeInUp_1s_ease-out]">
+            <span className="inline-block animate-[slideInLeft_1s_ease-out] transform hover:scale-105 transition-transform duration-300">
               Code Your Future with{' '}
             </span>
-            <span className="bg-gradient-to-r from-blue-400 to-teal-400 bg-clip-text text-transparent animate-[bounce_2s_ease-in-out_infinite] inline-block transform hover:scale-110 transition-transform duration-300 relative">
+            <span className="bg-gradient-to-r from-blue-400 to-teal-400 bg-clip-text text-transparent animate-[slideInRight_1.2s_ease-out] inline-block transform hover:scale-110 transition-transform duration-300 relative">
               Atharva!
               <span className="absolute -inset-1 bg-gradient-to-r from-blue-400/20 to-teal-400/20 blur-lg animate-pulse"></span>
             </span>
@@ -42,7 +42,7 @@ const Hero = () => {
         <div className="absolute bottom-20 right-10 w-32 h-32 bg-teal-500/10 rounded-full blur-xl animate-pulse delay-1000"></div>
       </div>
 
-      <style jsx>{`
+      <style>{`
         @keyframes fadeInUp {
           from {
             opacity: 0;
@@ -51,6 +51,28 @@ const Hero = () => {
           to {
             opacity: 1;
             transform: translateY(0);
+          }
+        }
+        
+        @keyframes slideInLeft {
+          from {
+            opacity: 0;
+            transform: translateX(-50px);
+          }
+          to {
+            opacity: 1;
+            transform: translateX(0);
+          }
+        }
+        
+        @keyframes slideInRight {
+          from {
+            opacity: 0;
+            transform: translateX(50px);
+          }
+          to {
+            opacity: 1;
+            transform: translateX(0);
           }
         }
       `}</style>
