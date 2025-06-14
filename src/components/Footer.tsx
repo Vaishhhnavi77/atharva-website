@@ -9,7 +9,7 @@ const Footer = () => {
               Atharva Computer Institute
             </div>
             <p className="text-slate-400">
-              Empowering students with quality education in programming and technology since 2020.
+              Empowering students with quality education in programming and technology since 2011.
             </p>
           </div>
           
