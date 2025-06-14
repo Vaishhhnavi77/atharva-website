@@ -1,4 +1,3 @@
-
 const Courses = () => {
   const courses = [
     {
@@ -23,10 +22,10 @@ const Courses = () => {
       title: "Python Programming",
       description: "Learn Python for automation, data science, and web development",
       duration: "3 months", 
-      features: ["Python Basics", "Data Structures", "Libraries", "Projects"]
+      features: ["Python Basics", "Libraries", "Web Development", "Projects"]
     },
     {
-      title: "TALLY ERP9",
+      title: "Tally Prime",
       description: "Complete accounting software training for business",
       duration: "1.5 months",
       features: ["Accounting Basics", "Inventory Management", "GST", "Reports"]
@@ -44,7 +43,7 @@ const Courses = () => {
       features: ["Formulas", "Pivot Tables", "Macros", "Data Analysis"]
     },
     {
-      title: "MSCIT",
+      title: "CCSS",
       description: "Maharashtra State Certificate in Information Technology",
       duration: "6 months",
       features: ["Computer Basics", "Office Suite", "Internet", "Certification"]
@@ -54,6 +53,12 @@ const Courses = () => {
       description: "Complete Microsoft Office suite training",
       duration: "1.5 months",
       features: ["Word", "Excel", "PowerPoint", "Outlook"]
+    },
+    {
+      title: "Java Programming",
+      description: "Learn Java for enterprise applications and web development",
+      duration: "3 months",
+      features: ["Java Basics", "OOP Concepts", "Collections", "Web Applications"]
     }
   ];
 

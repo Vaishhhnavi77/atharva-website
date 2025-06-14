@@ -1,5 +1,5 @@
 
-import { Phone, Mail } from 'lucide-react';
+import { Phone, Mail, MapPin } from 'lucide-react';
 
 const Contact = () => {
   return (
@@ -39,7 +39,17 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="text-white font-semibold">Email</h4>
-                    <p className="text-slate-300">info@atharvainstitutions.com</p>
+                    <p className="text-slate-300">sheelawaghule@gmail.com</p>
+                  </div>
+                </div>
+
+                <div className="flex items-center space-x-4">
+                  <div className="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center">
+                    <MapPin className="text-white" size={20} />
+                  </div>
+                  <div>
+                    <h4 className="text-white font-semibold">Address</h4>
+                    <p className="text-slate-300">Sandwik Colony-Bhosari, Pune 411039, Maharashtra</p>
                   </div>
                 </div>
               </div>
@@ -50,19 +60,19 @@ const Contact = () => {
               <ul className="space-y-3 text-slate-300">
                 <li className="flex items-center">
                   <div className="w-2 h-2 bg-blue-400 rounded-full mr-3"></div>
-                  Affordable fees - All courses at ₹5,000
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-teal-400 rounded-full mr-3"></div>
                   Expert instructors with industry experience
                 </li>
                 <li className="flex items-center">
-                  <div className="w-2 h-2 bg-purple-400 rounded-full mr-3"></div>
+                  <div className="w-2 h-2 bg-teal-400 rounded-full mr-3"></div>
                   Hands-on practical learning approach
                 </li>
                 <li className="flex items-center">
-                  <div className="w-2 h-2 bg-pink-400 rounded-full mr-3"></div>
+                  <div className="w-2 h-2 bg-purple-400 rounded-full mr-3"></div>
                   Flexible batch timings
+                </li>
+                <li className="flex items-center">
+                  <div className="w-2 h-2 bg-pink-400 rounded-full mr-3"></div>
+                  Quality education at affordable rates
                 </li>
               </ul>
             </div>
@@ -107,11 +117,12 @@ const Contact = () => {
                   <option>C++ Programming</option>
                   <option>Web Development</option>
                   <option>Python Programming</option>
-                  <option>TALLY ERP9</option>
+                  <option>Tally Prime</option>
                   <option>English Speaking</option>
                   <option>Advanced Excel</option>
-                  <option>MSCIT</option>
+                  <option>CCSS</option>
                   <option>MS Office</option>
+                  <option>Java Programming</option>
                 </select>
               </div>
               

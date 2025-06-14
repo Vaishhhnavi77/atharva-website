@@ -6,7 +6,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-8">
           <div>
             <div className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-teal-400 bg-clip-text text-transparent mb-4">
-              Atharva Institutions
+              Atharva Computer Institute
             </div>
             <p className="text-slate-400">
               Empowering students with quality education in programming and technology since 2020.
@@ -27,13 +27,14 @@ const Footer = () => {
             <h3 className="text-white font-semibold mb-4">Contact Info</h3>
             <div className="space-y-2 text-slate-400">
               <p>Phone: +91 98765 43210</p>
-              <p>Email: info@atharvainstitutions.com</p>
+              <p>Email: sheelawaghule@gmail.com</p>
+              <p>Address: Sandwik Colony-Bhosari, Pune 411039, Maharashtra</p>
             </div>
           </div>
         </div>
         
         <div className="border-t border-slate-800 mt-8 pt-8 text-center text-slate-400">
-          <p>&copy; 2024 Atharva Institutions. All rights reserved.</p>
+          <p>&copy; 2024 Atharva Computer Institute. All rights reserved.</p>
         </div>
       </div>
     </footer>
