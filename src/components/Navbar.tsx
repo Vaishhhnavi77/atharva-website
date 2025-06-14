@@ -26,21 +26,22 @@ const Navbar = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-6">
+          <div className="hidden md:flex items-center space-x-8">
+            <div className="flex items-center space-x-8">
               {navItems.map((item) => (
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-slate-300 hover:text-blue-400 px-4 py-3 rounded-md text-lg font-medium transition-colors duration-300"
+                  className="text-white font-bold text-lg hover:text-blue-400 px-3 py-2 rounded-md transition-all duration-300 hover:bg-blue-500/10 relative group"
                 >
                   {item.name}
+                  <span className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-blue-400 to-teal-400 transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
                 </a>
               ))}
-              <button className="bg-gradient-to-r from-blue-500 to-teal-500 text-white px-8 py-3 rounded-full font-semibold text-lg hover:from-blue-600 hover:to-teal-600 transition-all duration-300 transform hover:scale-105">
-                Enroll Now
-              </button>
             </div>
+            <button className="bg-gradient-to-r from-blue-500 to-teal-500 text-white px-6 py-3 rounded-full font-bold text-lg hover:from-blue-600 hover:to-teal-600 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl ml-4">
+              Enroll Now
+            </button>
           </div>
 
           {/* Mobile menu button */}
@@ -62,13 +63,13 @@ const Navbar = () => {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-slate-300 hover:text-blue-400 block px-3 py-3 rounded-md text-lg font-medium"
+                  className="text-white font-bold hover:text-blue-400 block px-3 py-3 rounded-md text-lg transition-colors duration-300"
                   onClick={() => setIsOpen(false)}
                 >
                   {item.name}
                 </a>
               ))}
-              <button className="w-full bg-gradient-to-r from-blue-500 to-teal-500 text-white px-6 py-3 rounded-full font-semibold text-lg hover:from-blue-600 hover:to-teal-600 transition-all duration-300 mt-4">
+              <button className="w-full bg-gradient-to-r from-blue-500 to-teal-500 text-white px-6 py-3 rounded-full font-bold text-lg hover:from-blue-600 hover:to-teal-600 transition-all duration-300 mt-4 shadow-lg">
                 Enroll Now
               </button>
             </div>
