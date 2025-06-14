@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const Hero = () => {
@@ -17,7 +16,7 @@ const Hero = () => {
             <span className="inline-block animate-[slideInLeft_1s_ease-out] transform hover:scale-105 transition-transform duration-300">
               Code Your Future with{' '}
             </span>
-            <span className="bg-gradient-to-r from-blue-400 to-teal-400 bg-clip-text text-transparent animate-[slideInRight_1.2s_ease-out] inline-block transform hover:scale-110 transition-transform duration-300 relative">
+            <span className="bg-gradient-to-r from-blue-400 to-teal-400 bg-clip-text text-transparent animate-[slideInRight_1.2s_ease-out] inline-block transform hover:scale-110 transition-transform duration-300 relative ml-4">
               Atharva!
               <span className="absolute -inset-1 bg-gradient-to-r from-blue-400/20 to-teal-400/20 blur-lg animate-pulse"></span>
             </span>
