@@ -1,6 +1,14 @@
+
 import React from 'react';
 
 const Hero = () => {
+  const scrollToCourses = () => {
+    const coursesSection = document.getElementById('courses');
+    if (coursesSection) {
+      coursesSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Animation */}
@@ -30,7 +38,10 @@ const Hero = () => {
             <button className="bg-gradient-to-r from-blue-500 to-teal-500 text-white px-8 py-4 rounded-full text-lg font-semibold hover:from-blue-600 hover:to-teal-600 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-blue-500/25">
               Enroll Now
             </button>
-            <button className="border-2 border-blue-400 text-blue-400 px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-400 hover:text-white transition-all duration-300">
+            <button 
+              onClick={scrollToCourses}
+              className="border-2 border-blue-400 text-blue-400 px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-400 hover:text-white transition-all duration-300"
+            >
               View Courses
             </button>
           </div>
