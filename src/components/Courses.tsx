@@ -1,5 +1,12 @@
 
 const Courses = () => {
+  const scrollToContact = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   const courses = [
     {
       title: "C Programming",
@@ -114,7 +121,10 @@ const Courses = () => {
                 ))}
               </div>
 
-              <button className="w-full bg-gradient-to-r from-blue-500 to-teal-500 text-white py-4 rounded-lg font-semibold text-lg hover:from-blue-600 hover:to-teal-600 transition-all duration-300 group-hover:shadow-lg">
+              <button 
+                onClick={scrollToContact}
+                className="w-full bg-gradient-to-r from-blue-500 to-teal-500 text-white py-4 rounded-lg font-semibold text-lg hover:from-blue-600 hover:to-teal-600 transition-all duration-300 group-hover:shadow-lg"
+              >
                 Explore Course
               </button>
             </div>
