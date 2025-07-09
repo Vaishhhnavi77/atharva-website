@@ -41,6 +41,63 @@ export type Database = {
         }
         Relationships: []
       }
+      profiles: {
+        Row: {
+          created_at: string
+          email: string | null
+          full_name: string | null
+          id: string
+          updated_at: string
+        }
+        Insert: {
+          created_at?: string
+          email?: string | null
+          full_name?: string | null
+          id: string
+          updated_at?: string
+        }
+        Update: {
+          created_at?: string
+          email?: string | null
+          full_name?: string | null
+          id?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
+      reviews: {
+        Row: {
+          course: string
+          created_at: string
+          full_name: string
+          id: string
+          rating: number
+          review_text: string
+          updated_at: string
+          user_id: string
+        }
+        Insert: {
+          course: string
+          created_at?: string
+          full_name: string
+          id?: string
+          rating: number
+          review_text: string
+          updated_at?: string
+          user_id: string
+        }
+        Update: {
+          course?: string
+          created_at?: string
+          full_name?: string
+          id?: string
+          rating?: number
+          review_text?: string
+          updated_at?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
