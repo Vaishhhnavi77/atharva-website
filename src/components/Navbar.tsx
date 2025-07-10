@@ -21,8 +21,8 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
-            <span className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-teal-400 bg-clip-text text-transparent">
-              Atharva
+            <span className="text-xl font-bold bg-gradient-to-r from-blue-400 to-teal-400 bg-clip-text text-transparent">
+              Atharva Computer Institute
             </span>
           </div>
 
@@ -31,33 +31,38 @@ const Navbar = () => {
             <div className="ml-10 flex items-baseline space-x-8">
               <button
                 onClick={() => scrollToSection("hero")}
-                className="text-slate-300 hover:text-white px-3 py-2 text-sm font-medium transition-colors"
+                className="nav-link text-slate-300 hover:text-white px-4 py-2 text-lg font-semibold transition-all duration-300 relative overflow-hidden group"
               >
-                Home
+                <span className="relative z-10">Home</span>
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-teal-500/10 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
               </button>
               <button
                 onClick={() => scrollToSection("about")}
-                className="text-slate-300 hover:text-white px-3 py-2 text-sm font-medium transition-colors"
+                className="nav-link text-slate-300 hover:text-white px-4 py-2 text-lg font-semibold transition-all duration-300 relative overflow-hidden group"
               >
-                About
+                <span className="relative z-10">About</span>
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-teal-500/10 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
               </button>
               <button
                 onClick={() => scrollToSection("courses")}
-                className="text-slate-300 hover:text-white px-3 py-2 text-sm font-medium transition-colors"
+                className="nav-link text-slate-300 hover:text-white px-4 py-2 text-lg font-semibold transition-all duration-300 relative overflow-hidden group"
               >
-                Courses
+                <span className="relative z-10">Courses</span>
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-teal-500/10 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
               </button>
               <button
                 onClick={() => scrollToSection("reviews")}
-                className="text-slate-300 hover:text-white px-3 py-2 text-sm font-medium transition-colors"
+                className="nav-link text-slate-300 hover:text-white px-4 py-2 text-lg font-semibold transition-all duration-300 relative overflow-hidden group"
               >
-                Reviews
+                <span className="relative z-10">Reviews</span>
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-teal-500/10 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
               </button>
               <button
                 onClick={() => scrollToSection("contact")}
-                className="text-slate-300 hover:text-white px-3 py-2 text-sm font-medium transition-colors"
+                className="nav-link text-slate-300 hover:text-white px-4 py-2 text-lg font-semibold transition-all duration-300 relative overflow-hidden group"
               >
-                Contact
+                <span className="relative z-10">Contact</span>
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-teal-500/10 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
               </button>
             </div>
           </div>
@@ -107,31 +112,31 @@ const Navbar = () => {
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-slate-800/50 rounded-lg mt-2">
               <button
                 onClick={() => scrollToSection("hero")}
-                className="text-slate-300 hover:text-white block px-3 py-2 text-base font-medium w-full text-left"
+                className="text-slate-300 hover:text-white block px-3 py-2 text-lg font-semibold w-full text-left hover:bg-slate-700/50 rounded transition-colors duration-200"
               >
                 Home
               </button>
               <button
                 onClick={() => scrollToSection("about")}
-                className="text-slate-300 hover:text-white block px-3 py-2 text-base font-medium w-full text-left"
+                className="text-slate-300 hover:text-white block px-3 py-2 text-lg font-semibold w-full text-left hover:bg-slate-700/50 rounded transition-colors duration-200"
               >
                 About
               </button>
               <button
                 onClick={() => scrollToSection("courses")}
-                className="text-slate-300 hover:text-white block px-3 py-2 text-base font-medium w-full text-left"
+                className="text-slate-300 hover:text-white block px-3 py-2 text-lg font-semibold w-full text-left hover:bg-slate-700/50 rounded transition-colors duration-200"
               >
                 Courses
               </button>
               <button
                 onClick={() => scrollToSection("reviews")}
-                className="text-slate-300 hover:text-white block px-3 py-2 text-base font-medium w-full text-left"
+                className="text-slate-300 hover:text-white block px-3 py-2 text-lg font-semibold w-full text-left hover:bg-slate-700/50 rounded transition-colors duration-200"
               >
                 Reviews
               </button>
               <button
                 onClick={() => scrollToSection("contact")}
-                className="text-slate-300 hover:text-white block px-3 py-2 text-base font-medium w-full text-left"
+                className="text-slate-300 hover:text-white block px-3 py-2 text-lg font-semibold w-full text-left hover:bg-slate-700/50 rounded transition-colors duration-200"
               >
                 Contact
               </button>
